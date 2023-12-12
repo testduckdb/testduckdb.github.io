@@ -230,36 +230,71 @@ body_class: landing nowrap
 </section>
 
 
+
+
 <section class="hidden">
 	
 <div class="examples hero-demo">
-		
-<div data-language="r" data-example="join-query">
+	
+<!-- PYTHON -->	
+<div data-language="python" data-example="join-query">
 {% highlight sql %}
--- set the memory limit of the system to 10GB
-SET memory_limit='10GB';
--- configure the system to use 1 thread
-SET threads TO 1;
--- enable printing of a progress bar during long-running queries
-SET enable_progress_bar=true;
--- set the default null order to NULLS LAST
-PRAGMA default_null_order='nulls_last';
-
--- show a list of all available settings
-SELECT * FROM duckdb_settings();
-
--- return the current value of a specific setting
--- this example returns 'automatic'
-SELECT current_setting('access_mode');
-
--- reset the memory limit of the system back to the default
-RESET memory_limit;
+-- LANGUAGE: PYTHON, EXAMPLE: JOIN QUERY
 {% endhighlight %}
-</div>
+</div>	
 
 <div data-language="python" data-example="aggregation-query">
 {% highlight sql %}
 -- LANGUAGE: PYTHON, EXAMPLE: AGGREGATION QUERY
+{% endhighlight %}
+</div>
+
+<div data-language="python" data-example="parquet-reading">
+{% highlight sql %}
+-- LANGUAGE: PYTHON, EXAMPLE: PARQUET READING
+{% endhighlight %}
+</div>
+
+<div data-language="python" data-example="as-of-join">
+{% highlight sql %}
+-- LANGUAGE: PYTHON, EXAMPLE: AS-OF JOIN
+{% endhighlight %}
+</div>
+
+<div data-language="python" data-example="s3-access">
+{% highlight sql %}
+-- LANGUAGE: PYTHON, EXAMPLE: S3 ACCESS
+{% endhighlight %}
+</div>
+	
+<!-- R -->
+<div data-language="r" data-example="join-query">
+{% highlight sql %}
+-- LANGUAGE: R, EXAMPLE: S3 ACCESS
+{% endhighlight %}
+</div>
+
+<div data-language="r" data-example="aggregation-query">
+{% highlight sql %}
+-- LANGUAGE: PYTHON, EXAMPLE: AGGREGATION QUERY
+{% endhighlight %}
+</div>
+
+<div data-language="r" data-example="parquet-reading">
+{% highlight sql %}
+-- LANGUAGE: PYTHON, EXAMPLE: PARQUET READING
+{% endhighlight %}
+</div>
+
+<div data-language="r" data-example="as-of-join">
+{% highlight sql %}
+-- LANGUAGE: PYTHON, EXAMPLE: AS-OF JOIN
+{% endhighlight %}
+</div>
+
+<div data-language="r" data-example="s3-access">
+{% highlight sql %}
+-- LANGUAGE: PYTHON, EXAMPLE: S3 ACCESS
 {% endhighlight %}
 </div>
 	

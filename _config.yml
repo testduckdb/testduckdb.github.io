@@ -57,7 +57,7 @@ defaults:
     values:
       image: /images/sharingduckdb.jpg
 
-repository: "duckdb/duckdb-web"
+repository: "testduckdb/testduckdb.github.io"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
